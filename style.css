@@ -240,3 +240,21 @@ footer a{color: #ccd6df;}
 
 .reservation 
 .reservation h5 {background-color: #0791be;color: #fff; padding: 0.8em;text-align: center;}
+
+.autresvoyages {background: url(../img/img11.jpg) no repeat scroll center #101F46}
+
+
+
+#newletter {
+    background: url(../img/img16.jpg) no-repeat 0 bottom #000;
+    background-size: cover;
+    position: relative;}
+    /*margin-top: 0%;
+    z-index: -1;
+    height: 35vh;
+    color: #fff;
+    
+}
+#newletter h2, h4 {color:#fff}*/
+
+#newletter .news {width: 69%;margin: 0 auto;position:relative;}
