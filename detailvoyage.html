@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETAIL VOYAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@600&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <!--debut topbar-->
+    <section id="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 coordonnees pt-3 col-6">
+                    <ul class="d-flex justify-content-around">
+                        <li><i class="bi bi-telephone-fill"></i>
+                            01 23 45 67 89</li>
+                        <li><i class="bi bi-envelope"></i>
+                            contact@voyage.com</li>
+                        <li><i class="bi bi-geo-alt-fill"></i>30 rue de la république<br class="d-none display-mobile"><span class="ville">31400 toulouse</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 d-flex pt-3 col-6">
+                    <!--reseau sociaux-->
+
+                    <!--bouton recherche-->
+                    <div class="social">
+                        <ul class="d-flex">
+                            <li><i class="bi bi-facebook"></i></li>
+                            <li><i class="bi bi-twitter-x"></i></li>
+                            <li><i class="bi bi-instagram"></i></li>
+                            <li><i class="bi bi-linkedin"></i></li>    
+                        </ul>
+
+                    </div>
+    
+                    <!-- bouton recherche-->
+                    <div class="search-icon">
+                        <button><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- fin topbar -->
+<!-- header -->
+
+<header>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-expand-mg col-md-10 offset-md-1">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><h3 class="text-white">VOYAGE</h3></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse"             id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-linktext-white " href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white " href="#">Blog</a>
+                            </li>                                
+                        </ul>
+                        <a href="#" class="btn btn-primary">Je Réserve !</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+</header>
+
+
+<section id="page-titre" class="overlay">
+    <h1>DETAIL DU SEJOUR</h1>
+    <div class="vague">
+    </div>
+</section>
+
+<main class="container">
+    <div class="row">
+        <section class="col-lg-7 offset-lg-1" id="page-details">
+            <h2>lorem itsum dolor</h2>
+            <img src="img/img27.jpg" alt="" class="img-fluid">
+            <div class="details">
+                <ul class="d-flex justify-content-center">
+                    <li><i class="bi bi-clock"></i>5J/4N|</li>
+                    <li><i class="bi bi-people-fill"></i>nombre de personnes|</li>
+                    <li><i class="bi bi-geo-alt-fill"></i>NORVEGE|</li>
+                </ul>
+            </div><!--fin div detail-->
+            <div id="tabs"><!-- Nav tabs -->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Description</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">programme</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">Messages</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+                  </li>
+                </ul>
+                
+                <!-- Tab panes -->
+                <div class="tab-content">
+
+                    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sint deleniti eum doloremque dicta ad explicabo at, culpa pariatur laborum atque quasi distinctio beatae, earum, quos officiis commodi. Velit, quia?</p>
+                    </div>
+
+                    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae doloremque qui eligendi corporis ab natus dolorum quaerat quidem exercitationem? Molestiae, et similique obcaecati a nostrum asperiores vel sapiente earum aut.</p>
+                    </div>
+
+                    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab" tabindex="0"><img src="img/gallery-5.jpg" alt="">
+                    </div>
+
+                    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.773224256968!2d1.370753076174565!3d43.611263171104184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebaa26015cb43%3A0xacdcee70b0cc51c3!2s15%20Chem.%20de%20la%20Crabe%2C%2031300%20Toulouse!5e0!3m2!1sen!2sfr!4v1698064329623!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="galerie-details" class="row"> 
+                <h3>galerie / photos</h3>
+
+                <figure class="col">
+                    <img src="img/img30.jpg" alt="" class="img-fluid rounded">
+                </figure>
+                <figure class="col">
+                    <img src="img/img31.jpg" alt="" class="img-fluid rounded">
+                </figure>
+
+            </div><!--fin class galerie-->
+
+        </section>
+        <aside class="col-lg-3">
+            <div class="nbr">
+                <span>649€/par personne</span>
+            
+                <div class="detailstars">
+                    <i class="bi bi-star-fill orange"></i>
+                    <i class="bi bi-star-fill orange"></i>
+                    <i class="bi bi-star-fill orange"></i>
+                    <i class="bi bi-star gris"></i>
+                    <i class="bi bi-star gris"></i>
+                </div>
+            </div>
+                <div class="reservation">
+                    <form action="" method="POST">
+                        <h5>Réservation</h5>
+            
+                        <input type="text" name="Nom"
+                        placeholder="Nom" class="form-control">
+                        <input type="email" name="email" placeholder="e-mail" class="form-control">
+                        <input type="number" name="number" placeholder="telephone"
+                        class="form-control">
+                        <input type="date">
+
+                        <div class="form-check">
+                            <input type="checkbox" id="guide touristique">
+                            <label for="guide touristique">guide touristique</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="assurance">
+                            <label for="assurance">assurance</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="diner">
+                            <label for="repas">diner</label>
+                        </div> 
+
+                        <div class="form-check">
+                        <input type="checkbox" id="location de velos">
+                        <label for="location">location de velo</label>
+                        </div>
+                        
+                        <input type="submit" value="Book now" class="btn btn-primary">
+                    </form>
+
+                
+                
+                
+        
+                </div>
+        </aside>
+    </div>
+</main>
+
+
+<section id="bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 offset-md-1">
+                <h4>a Propos de voyages</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eum quis maiores sunt modi iusto ducimus ipsum unde. Minima laudantium quis eos veritatis voluptatibus deserunt obcaecati veniam soluta nisi minus.</p>
+                <img src="img/logo6.png" alt="">
+                <img src="img/logo2.png" alt="">
+            </div>
+            <div class="col-md-3">
+                <h4>a Propos de voyages</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam eum quis maiores sunt modi iusto ducimus ipsum unde. Minima laudantium quis eos veritatis voluptatibus deserunt obcaecati veniam soluta nisi minus.</p>
+                <ul>
+                    <li><i class="bi bi-telephone-fill"></i>
+                        123 456 789</li>
+                    <li><i class="bi bi-envelope-fill"></i>
+                        test@gmail.com</li>
+                    <li><i class="bi bi-geo-alt-fill"></i>
+                        adresse</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>a Propos de voyages</h4>
+                <article>
+                    <a href="#">
+                        <h6>titre de l'aticle</h6>
+                    </a>
+                    <span>19 Octobre 2023|aucun commentaire</span>
+                </article>
+                <hr>
+                <article>
+                    <a href="#">
+                        <h6>titre de l'aticle</h6>
+                    </a>
+                    <span>19 Octobre 2023|aucun commentaire</span>
+                </article>
+            </div>
+            <div class="col-md-2">
+                <h4>a Propos de voyages</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                <form action="" method="POST">
+                    <input type="email" placeholder="Votre email" class="form-control mb-3" required>
+                    <input type="submit" value="Rejoignez-nous !" class="btn btn-primary form-control">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="up">
+    <a href="#topbar"><i class="bi bi-arrow-up-circle-fill"></i></a>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="d-flex justify-content-center">
+                        <li><a href="">Mention légales |</a></li>
+                        <li><a href="#">Termes et conditions |</a></li>
+                        <li><a href="#">FAQ |</a></li>
+                    </ul>
+                </div>
+                <div class="col text-center">
+                    <div>
+                        <img src="img/favicon.png" alt="" width="60">
+                    </div>
+                </div>
+                <div class="col">
+                    <p>Copyright Voyage 2023, tous droits réservés.</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+       
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+      
+        </script>
+</body>
+</html>

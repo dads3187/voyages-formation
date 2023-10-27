@@ -1,0 +1,242 @@
+/*noir bleuté (titre) : #101F46 
+bleu clair (fond) : #0791be 
+bleu(bouton en hover) : #2c75ba 
+orange (texte + fond) : #f56960 
+gris clair : #ccd6df
+gris foncé (fond bottom): #383838
+gris (footer) : #404040
+Police Titre : Raleway 
+Police texte : Open sans.
+font-family: 'Open Sans', sans-serif; 
+
+font-family: 'Raleway',sans-serif; */
+body{margin:0;padding:0;
+font-family: 'Open Sans', sans-serif;
+color:#101F46;background: #fafafa;
+}
+h1,h2,h3,h4,h5,h6{font-family: 'Raleway', sans-serif;color:#101F46}
+    
+h3{font-size:2.7em;text-transform: uppercase;font-weight: 800;}
+h4{color:#f56960;text-transform: uppercase;
+    font-size: 0.9em;margin-bottom: 1em;}
+
+a{color:#134775;text-decoration: none;}
+a:hover{color:#0791be;text-decoration: none;}
+
+.btn-primary{background-color:#f56960}
+.btn-primary:hover{background-color: #bd534b;}
+a.btn-primary,input[type=submit]{border:none;}
+.btn-secondary{background-color: #0791be;}
+.btn-secondary:hover{background-color: #066a8b;}
+a.btn-secondary,button.btn-primary{border: none;}
+
+.overlay::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    background-color: rgba(0,0,0,0.5);
+
+
+}
+
+/* TOPBAR */
+#topbar{background-color:rgba(0,0,0,0.2);color:#fff;font-size:0.8em;}
+#topbar .coordonnees ul{list-style:none;}
+#topbar .coordonnees i{padding-right:0.5em;}
+.social ul{list-style: none;}
+.social li{padding-right: 1em;}
+#topbar .search-icon button{
+    border-top: 0;
+    border-bottom: 0;
+    border-color: #fff;
+    border-right-color:#fff;
+    background-color: rgba(0,0,0,0);
+}
+
+#topbar i.bi.bi-search {color:#fff;}
+
+/* SLIDER */
+
+.carousel-inner{position: relative; top:-150px;z-index:-1;height:80vh;}
+.carousel-caption{top:27%;}
+.carousel-control-next,.carousel-control-prev {
+ top: -150px;}
+
+/*POPULAIRE*/
+/*encadrement avec ombre*/
+#populaires {position: relative;}
+#populaires img {width: 100%;}
+ #populaires form{
+    box-shadow:0px 15px 25px 0px rgba(0,0,0,0.8);
+    padding: 3em 0;
+    margin:-170px auto 0 auto;
+    position:relative;z-index: 1;
+    background: #fff;
+    border-radius:4px;
+    width:97%;
+ }
+
+#populaires figure{
+    border: 8px solid #ffffff;position: relative;box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.25);
+}
+/*mettre position:relative pour afficher l'overlay sur figure mettre les images à 100% pour que sa marche*/
+
+.destinations {position: relative;}
+.cat,.city,.city1,.cat1 {position: absolute;color:#fff;}
+.cat{top:8%;left:5%}
+.city{bottom: 5%;left:10%;}
+.city h5,.city1 h5{color: #fff;font-weight: bold;text-transform: uppercase;}
+.cat1{z-index: 1;top: 4.5%;left:13%}
+.city1{bottom: 5%;left: 3%;}
+
+/*lieux*/
+#lieu .card {position: relative;}
+#lieu .prix{position: absolute;top: 2%;right: 0;}
+#lieu .details{width: 80%;margin: 0 auto;}
+#lieu .details ul,#page-details .details ul{list-style: none;background-color: #0791be;color: #fff;text-align: center;padding:0;margin-top: -8%;}
+#lieu .details li{display: inline-block;font-size: 0.7em;color: #fff;font-weight: 400;padding:1em 0;}
+
+.orange{color:#f56960}
+.gris{color: #ccd6df;}
+.note{display:flex;margin-bottom: 2%;}
+.stars {margin-left: 2%;}
+.visite {width: 60%;margin: 1em auto;}
+
+#lieu .links {border-top: 1px solid rgba(16,31,70,0.2);}
+
+/*chiffre*/
+
+.bleu{background-color: #0791be;color: #fff;padding:5em 0 0 19em;position: relative;}
+.bleu h3,.bleu h4 {color: #fff;}
+.bleu img{position: absolute;top: 5%;left: -20%;}
+
+#chiffres table{width: 100%;font-weight:600;}
+#chiffres td{padding: 2em 0;}
+#chiffres td i{font-size: 3em;}
+#chiffres td span {font-size: 2em;font-weight: bolder;}
+#chiffres .first{border-bottom: 1px solid rgba(255,255,255,0.5);}
+#chiffres tr td:nth-child(2){border-right: 1px solid rgba(255, 255, 255, 0.5);}
+#chiffres .tel{background: #fff;color: #101F46;width:40%;box-shadow: 0px 15px 55px -15px rgba(0,0,0,0.1);padding: 1em 0;position:relative;bottom:-10%}
+
+#chiffres .icon{color: #0791be;font-size: 4em;margin-right: 3%;}
+#chiffres h6 {color:#f56960;font-size: 1.5em;font-weight: bolder;}
+
+
+/*Aventure et activité*/
+#aventure .card{text-align: center;}
+.card-body {text-align: center;}
+.activite {width: 60%;margin: 1em auto;}
+/*#aventure style margin-top 10%*/
+.card img{width: 50%;}
+
+/*galerie*/
+#galerie {margin:5% 0 5% 0;}
+
+/*canoe*/
+#canoe {background: url(img/img16.jpg) no-repeat 0 0 #000;background-size: cover;position: relative;}
+#canoe .marque {background-color: #0791be;margin-top: -3%;margin-bottom: 8%;}
+
+#canoe form{border: 1px solid #fff;padding:0.5em;}
+#canoe .form-control{background-color:transparent;border: none;}
+#canoe input::placeholder{color: #ccc;}
+#canoe .container{position:relative;}
+#canoe h3,#canoe h4,#canoe p{color:#fff;}
+
+/*contact*/
+#contact{background-color: #0791be;color:#fff}
+/*#contact i{}*/
+#contact h4{color:#fff;font-size: 1.5em;text-transform: uppercase;}
+#contact .col{text-align:center;}
+#contact ul {list-style: none;text-align: left;}
+#contact .contact-action{border-top: 1px solid rgba(255, 255, 255, 0.25);padding-top: 2em;}
+
+#contact .col:nth-child(2) {border:1px solid rgba(255, 255, 255, 0.25);border-width: 0 1px 0 1px;}
+
+/*bottom*/
+#bottom {background-color: #383838;color:#ccd6df;padding: 5em 0;}
+#bottom h4{text-transform: uppercase;font-size: 1em;margin-bottom: 1em;border-left: 3px #0791be;text-indent: 0.8em;color: #fff;}
+#bottom h6{color: #fff;font-weight: 600;}
+#bottom h6:hover{color:#0791be;}
+#bottom img{width:48%}
+#bottom ul {list-style: none;padding:0}
+#bottom li{padding-bottom: 1em;}
+#bottom i{color: #f56960;padding-right: 0.5em;}
+
+/*up (fleche de naviguation*/
+.up {position: fixed;bottom: 2%;right: 2%;}
+.up i{font-size: 3em;color: #f56960;}
+/*:hover permet quand on passe la souris que sa change de couleur*/
+.up i:hover{color: #101F46;}
+/*footer*/
+footer{background-color: #404040;color:#ccd6df;padding:2em;}
+footer ul{list-style: none;padding-left: 0;}
+footer a{color: #ccd6df;}
+
+#page-titre{background: url(../img/inner-banner.jpg) no-repeat scroll 0 bottom #000; background-size: cover;position: relative;margin-top: -10%;z-index: -1;}
+
+#page-titre h1{color: #fff;text-transform: uppercase;font-size: 3em;text-align: center;padding: 5em;position: relative;}
+
+.vague{background: url(../img/banner-pattern.png) 0 0 scroll; height: 145px;position:relative;}
+
+#contacts table i{font-size: 1.5em;background-color: #0791be;color: #fff;padding:0.3em 0.5em;}
+#contacts table {border-color: transparent;--bs-table-bg:transparent}
+
+#contacts tr{padding:1px;margin-bottom: 1em;}
+#contacts ul{list-style: none;color: #bd534b;}
+#contacts .reseaux i{font-size: 1.5em;padding: 0.1em 0.3em;border:1px outset #f56960;margin: 5px;}
+
+#map iframe{width: 100%;}
+/*fin page contact*/
+/*page 404*/
+
+#page-titre-404{
+    background: url(../img/404-img.jpg) no-repeat scroll center center#000;
+    background-size: cover;
+    position: relative;
+    margin-top: -10%;
+    z-index: -1;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    /*axe principaldevient vertical*/
+    justify-content:center;
+    /*axe secondaire devient horizontale*/
+}
+
+.text-404 h3, .text-404 h4{color: #fff;}
+
+.text-404{position: relative;}
+
+.text-404 h4{font-size:0.9em;margin: 3em;}
+.text-404 h3{font-size:2.5em;margin-top: -9%;}
+#page-titre-404 form{position:relative;}
+#page-titre-404 input [type="search"]{
+    border: 1px solid #fff;
+    display: inline-block;
+    width: 40%;
+    height: 35px;
+    border-radius: 4px 0 0 4px;
+    margin-right: -1%;
+}
+
+#page-titre-404 button {
+    border: none;
+    background: #f56960;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 0 4px 4px 0;
+}
+.text-404 span{font-size: 10em;font-family:"Raleway",sans-serif;opacity:0.3;color: #fff;}
+
+/*page detail voyage*/
+#page-details .details ul{margin-top: 0;}
+#page-details .details li{display: inline-block;font-size: 0.7em;color: #fff;font-weight: 600;padding:1em 1em;}
+
+.nbr {background: #f56960; color: #fff; padding: 1em;text-align: center;}
+.nbr i,.nbr span {color: #fff;}
+
+.reservation 
+.reservation h5 {background-color: #0791be;color: #fff; padding: 0.8em;text-align: center;}
