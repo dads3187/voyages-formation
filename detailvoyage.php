@@ -1,103 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DETAIL VOYAGE</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@600&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-</head>
+<?php include('header.php');?>
 <body>
     <!--debut topbar-->
-    <section id="topbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 coordonnees pt-3 col-6">
-                    <ul class="d-flex justify-content-around">
-                        <li><i class="bi bi-telephone-fill"></i>
-                            01 23 45 67 89</li>
-                        <li><i class="bi bi-envelope"></i>
-                            contact@voyage.com</li>
-                        <li><i class="bi bi-geo-alt-fill"></i>30 rue de la république<br class="d-none display-mobile"><span class="ville">31400 toulouse</span></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 d-flex pt-3 col-6">
-                    <!--reseau sociaux-->
-
-                    <!--bouton recherche-->
-                    <div class="social">
-                        <ul class="d-flex">
-                            <li><i class="bi bi-facebook"></i></li>
-                            <li><i class="bi bi-twitter-x"></i></li>
-                            <li><i class="bi bi-instagram"></i></li>
-                            <li><i class="bi bi-linkedin"></i></li>    
-                        </ul>
-
-                    </div>
-    
-                    <!-- bouton recherche-->
-                    <div class="search-icon">
-                        <button><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-<!-- fin topbar -->
-<!-- header -->
-
-<header>
-    <div class="container">
-        <div class="row">
-            <nav class="navbar navbar-expand-mg col-md-10 offset-md-1">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><h3 class="text-white">VOYAGE</h3></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse"             id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="index.html">Accueil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Destinations</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-linktext-white " href="#">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white " href="#">Blog</a>
-                            </li>                                
-                        </ul>
-                        <a href="#" class="btn btn-primary">Je Réserve !</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-
-
-
-
-</header>
-
-
 <section id="page-titre" class="overlay">
     <h1>DETAIL DU SEJOUR</h1>
     <div class="vague">
@@ -168,7 +71,7 @@
         </section>
         <aside class="col-lg-3">
             <div class="nbr">
-                <span>649€/par personne</span>
+                <span>649€</b>/par personne</span>
             
                 <div class="detailstars">
                     <i class="bi bi-star-fill orange"></i>
@@ -179,49 +82,52 @@
                 </div>
             </div>
                 <div class="reservation">
-                    <form action="" method="POST">
-                        <h5>Réservation</h5>
-            
+                    <form action="" method="POST" class="border border-bottom-secondary">
+                        <div class="btn-secondary">
+                            <h3>Réservation</h3>
+                        </div>
                         <input type="text" name="Nom"
-                        placeholder="Nom" class="form-control">
-                        <input type="email" name="email" placeholder="e-mail" class="form-control">
+                        placeholder="Nom" class="form-control mb-3">
+                        <input type="email" name="email" placeholder="e-mail" class="form-control mb-3">
                         <input type="number" name="number" placeholder="telephone"
-                        class="form-control">
+                        class="form-control mb-3">
                         <input type="date">
                     
-                        <div class="form-check">
-                            <input type="checkbox" id="guide touristique">
-                            <label for="guide touristique">guide touristique</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" id="assurance">
-                            <label for="assurance">assurance</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" id="diner">
-                            <label for="repas">diner</label>
-                        </div> 
+                        <fieldset>
+                            <legend>Ajouter des options</legend>
+                            <div class="form-check">
+                                <input type="checkbox" id="guide touristique">
+                                <label for="guide touristique">guide touristique</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="assurance">
+                                <label for="assurance">assurance</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="diner">
+                                <label for="repas">diner</label>
+                            </div> 
 
-                        <div class="form-check">
-                        <input type="checkbox" id="location de velos">
-                        <label for="location">location de velo</label>
-                        </div>
-                        
-                        <input type="submit" value="Book now" class="btn btn-primary">
+                            <div class="form-check">
+                                <input type="checkbox" id="location de velos">
+                                <label for="location">location de velo</label>
+                            </div>
+                        </fieldset>
+                        <input type="submit" value="Book now" class="btn btn-primary form-control mb-3">
                     </form>
                 </div>
                         <div id="info-com">
                             <h4>titre</h4>
                             <h5>lorem ipsum dolor</h5>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda sed eveniet praesentium, ea aspernatur vel. Tenetur nostrum dolor ad. Praesentium fugit sit non cumque error commodi vero perferendis ipsam id!</p>
-                            <a href="#"class="btn btn-primary">Contact</a>
+                            <a href="#"class="btn btn-primary form-control mb-3">Contact</a>
                         </div>
 
-                        <div id="autresvoyages">
+                        <div id="autresvoyages" class="overlay">
                             <h4>Autres voyages</h4>
                             <h5>Lorem ipsm dolor</h5>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus perspiciatis dolores dignissimos.</p>
-                            <ul class="list-group-flush">
+                            <ul class="list-group-flush list-group">
                                 <li class="list-group-item"><i class="bi bi-arrow-right-circle-fill"></i>Vacances</li>
                                 <li class="list-group-item"><i class="bi bi-arrow-right-circle-fill"></i>Lune de Miel</li>
                                 <li class="list-group-item"><i class="bi bi-arrow-right-circle-fill"></i>Nouvel an</li>
@@ -298,29 +204,8 @@
 <div class="up">
     <a href="#topbar"><i class="bi bi-arrow-up-circle-fill"></i></a>
     </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <ul class="d-flex justify-content-center">
-                        <li><a href="">Mention légales |</a></li>
-                        <li><a href="#">Termes et conditions |</a></li>
-                        <li><a href="#">FAQ |</a></li>
-                    </ul>
-                </div>
-                <div class="col text-center">
-                    <div>
-                        <img src="img/favicon.png" alt="" width="60">
-                    </div>
-                </div>
-                <div class="col">
-                    <p>Copyright Voyage 2023, tous droits réservés.</p>
-                </div>
-                
-            </div>
-        </div>
-    </footer>
-       
+    
+    <?php include('footer.php');?>
     
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 

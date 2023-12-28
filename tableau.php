@@ -68,8 +68,18 @@
 
     </table>
         
+    <form action="">
+        <fieldset>
+            <input type="text" placeholder="nom prenom">
+            <input type="email" placeholder="email">
+            
+        </fieldset>
 
-
+        <fieldset>
+            <input type="text" placeholder="nom prenom">
+            <input type="email" placeholder="email">
+        </fieldset>
+    </form>
 
 </body>
 </html>

@@ -10,6 +10,7 @@ Police texte : Open sans.
 font-family: 'Open Sans', sans-serif; 
 
 font-family: 'Raleway',sans-serif; */
+*{position:relative}
 body{margin:0;padding:0;
 font-family: 'Open Sans', sans-serif;
 color:#101F46;background: #fafafa;
@@ -25,9 +26,11 @@ a:hover{color:#0791be;text-decoration: none;}
 
 .btn-primary{background-color:#f56960}
 .btn-primary:hover{background-color: #bd534b;}
+.border-primary {border-color: #f56960;}
 a.btn-primary,input[type=submit]{border:none;}
 .btn-secondary{background-color: #0791be;}
 .btn-secondary:hover{background-color: #066a8b;}
+.border-secondary {border-color: #0791be;}
 a.btn-secondary,button.btn-primary{border: none;}
 
 .overlay::before{
@@ -174,11 +177,11 @@ footer{background-color: #404040;color:#ccd6df;padding:2em;}
 footer ul{list-style: none;padding-left: 0;}
 footer a{color: #ccd6df;}
 
-#page-titre{background: url(../img/inner-banner.jpg) no-repeat scroll 0 bottom #000; background-size: cover;position: relative;margin-top: -10%;z-index: -1;}
+#page-titre{background: url(img/inner-banner.jpg) no-repeat scroll 0 bottom #000; background-size: cover;position: relative;margin-top: -10%;z-index: -1;}
 
 #page-titre h1{color: #fff;text-transform: uppercase;font-size: 3em;text-align: center;padding: 5em;position: relative;}
 
-.vague{background: url(../img/banner-pattern.png) 0 0 scroll; height: 145px;position:relative;}
+.vague{background: url(img/banner-pattern.png) 0 0 scroll; height: 145px;position:relative;}
 
 #contacts table i{font-size: 1.5em;background-color: #0791be;color: #fff;padding:0.3em 0.5em;}
 #contacts table {border-color: transparent;--bs-table-bg:transparent}
@@ -192,7 +195,7 @@ footer a{color: #ccd6df;}
 /*page 404*/
 
 #page-titre-404{
-    background: url(../img/404-img.jpg) no-repeat scroll center center#000;
+    background: url(img/404-img.jpg) no-repeat scroll center center#000;
     background-size: cover;
     position: relative;
     margin-top: -10%;
@@ -235,11 +238,11 @@ footer a{color: #ccd6df;}
 #page-details .details ul{margin-top: 0;}
 #page-details .details li{display: inline-block;font-size: 0.7em;color: #fff;font-weight: 600;padding:1em 1em;}
 
-.nbr {background: #f56960; color: #fff; padding: 1em;text-align: center;}
+.nbr {background: #f56960; color: #fff; padding: 1em;text-align: center;margin-bottom: 1em;}
 .nbr i,.nbr span {color: #fff;}
 
 .reservation 
-.reservation h5 {background-color: #0791be;color: #fff; padding: 0.8em;text-align: center;}
+/*.reservation h5 {background-color: #0791be;color: #fff; padding: 0.8em;text-align: center;}*/
 
 .autresvoyages {background: url(../img/img11.jpg) no repeat scroll center #101F46}
 
@@ -248,7 +251,7 @@ footer a{color: #ccd6df;}
 #newletter {
     background: url(../img/img16.jpg) no-repeat 0 bottom #000;
     background-size: cover;
-    position: relative;}
+    position: relative;margin-top: 2em;}
     /*margin-top: 0%;
     z-index: -1;
     height: 35vh;
@@ -257,4 +260,32 @@ footer a{color: #ccd6df;}
 }
 #newletter h2, h4 {color:#fff}*/
 
-#newletter .news {width: 69%;margin: 0 auto;position:relative;}
+#newletter .news {width: 35%;margin: 0 15% auto;position:relative;}
+form,#info-com {
+    background:rgba(200,175 ,151 ,0.2);
+    padding: 1em;
+    margin-bottom: 2.5em;
+    border-bottom: 3px solid #0791be;
+}
+
+legend {font-size: 1.2em;font-weight: 600;}
+aside form h3 {font-size: 1em;color: #fff;text-align: center;padding: 1.5em;}
+
+#info-com {text-align: center;}
+
+#autresvoyages {background: url(../img/gallery-1.jpg) no-repeat scroll 0 bottom #000;
+    color: #fff;
+    padding: 1em;
+
+}
+
+#autresvoyages .list-group {
+    --bs-list-group-bg:rgba(0,0,0,0);
+}
+#autresvoyages li.list-group-item {color: #fff;}
+
+#autresvoyages h5 {color: #fff;}
+#autresvoyages.overlay::before {
+    background-color: rgba(3, 31, 122, 0.8);
+}
+#autresvoyages i.bi {margin-right: 1em;}
