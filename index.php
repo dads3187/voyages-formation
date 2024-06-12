@@ -1,10 +1,11 @@
-<?php include('header.php');?>
+<?php include('code/php/header.php'); ?>
+
 <!-- slider -->
 <?php 
 $server = "localhost";
 $user = "root";
 $password = "root";
-$db = "voyages-formation";
+$db = "voyage";
 $connexion = mysqli_connect($server, $user, $password, $db);
 
 if (!$connexion) {
@@ -20,7 +21,7 @@ if (!$connexion) {
         <div id="carouselExampleCaptions" class="carousel slide">            
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/slider-banner-1.jpg" class="d-block w-100" alt="mots clés">
+                    <img src="./img/slider-banner-1.jpg" class="d-block w-100" alt="mots clés">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="display-1 text-white">First slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
@@ -610,8 +611,8 @@ if (!$connexion) {
 <a href="#topbar"><i class="bi bi-arrow-up-circle-fill"></i></a>
 </div>
 
-<?php include('footer.php');?>
+<?php include('code/php/footer.php');?>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<?php include('header.php');?>
 
+<?php include('code/php/header.php'); ?>
 
 <section id="page-titre" class="overlay">
     <h1>CONTACTEZ-NOUS</h1>
@@ -146,7 +146,7 @@
     <a href="#topbar"><i class="bi bi-arrow-up-circle-fill"></i></a>
     </div>
 
-    <?php include('footer.php');?>
+<?php include('code/php/footer.php');?>>
     
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
