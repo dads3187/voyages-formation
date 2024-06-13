@@ -21,7 +21,7 @@ h3{font-size:2.7em;text-transform: uppercase;font-weight: 800;}
 h4{color:#f56960;text-transform: uppercase;
     font-size: 0.9em;margin-bottom: 1em;}
 
-a{color:#134775;text-decoration: none;}
+a{color:#75136a;text-decoration: none;}
 a:hover{color:#0791be;text-decoration: none;}
 
 .btn-primary{background-color:#f56960}
@@ -43,7 +43,11 @@ a.btn-secondary,button.btn-primary{border: none;}
 
 
 }
-
+header {background-color: rgba(0,0,0,0.2);}
+header .navbar button {background-color: #ffffff;}
+header .navbar-nav a{color:#fafafa;font-weight: bold;}
+header .navbar-nav .nav-link.active {color:#fafafa;font-weight: bold;}
+header .navbar-brand h3 {color:#fafafa}
 /* TOPBAR */
 #topbar{background-color:rgba(0,0,0,0.2);color:#fff;font-size:0.8em;}
 #topbar .coordonnees ul{list-style:none;}
@@ -139,7 +143,7 @@ a.btn-secondary,button.btn-primary{border: none;}
 
 /*canoe*/
 #canoe {
-    background: url(/img/img16.jpg) no-repeat center center ;
+    background: url('/voyage/img/img16.jpg') no-repeat center center ;
     background-size: cover;
     position: relative;
     width: 100%;
@@ -148,19 +152,20 @@ a.btn-secondary,button.btn-primary{border: none;}
 
 #canoe form{border: 1px solid #fff;padding:0.5em;}
 #canoe .form-control{background-color:transparent;border: none;}
-#canoe input::placeholder{color: #ccc;}
+#canoe input::placeholder{color: #cccccc00;}
 #canoe .container{position:relative;}
 #canoe h3,#canoe h4,#canoe p{color:#fff;}
 
 /*contact*/
-#contact{background-color: #0791be;color:#fff}
+#contact{background-color: #0791be;color:#fff;}
 /*#contact i{}*/
-#contact h4{color:#fff;font-size: 1.5em;text-transform: uppercase;}
-#contact .col{text-align:center;}
-#contact ul {list-style: none;text-align: left;}
-#contact .contact-action{border-top: 1px solid rgba(255, 255, 255, 0.25);padding-top: 2em;}
+#contacts h4{color:#fff;font-size: 1.5em;text-transform: uppercase;}
+#contacts h5{margin-top: 3em;}
+#contacts .col{text-align:center;}
+#contacts ul {list-style: none;text-align: left;}
+#contacts .contact-action{border-top: 1px solid rgba(255, 255, 255, 0.25);padding-top: 2em;}
+#contacts .col:nth-child(2) {border:1px solid rgba(255, 255, 255, 0.25);border-width: 0 1px 0 1px;}
 
-#contact .col:nth-child(2) {border:1px solid rgba(255, 255, 255, 0.25);border-width: 0 1px 0 1px;}
 
 /*bottom*/
 #bottom {background-color: #383838;color:#ccd6df;padding: 5em 0;}
@@ -178,29 +183,43 @@ a.btn-secondary,button.btn-primary{border: none;}
 /*:hover permet quand on passe la souris que sa change de couleur*/
 .up i:hover{color: #101F46;}
 /*footer*/
-#footer{background-color: #404040;color:#ccd6df;padding:2em;}
-#footer ul{list-style: none;padding-left: 0;}
-#footer a{color: #ccd6df;}
+footer{background-color: #404040;color:#ccd6df;padding:2em;}
+footer ul{padding-left: 0;}
+footer a{color: #ffffff;}
+footer li {list-style: none;}
 
-#page-titre{background: url(img/inner-banner.jpg) no-repeat scroll 0 bottom #000; background-size: cover;position: relative;margin-top: -10%;z-index: -1;}
+
+#page-titre {background: url('/voyage/img/inner-banner.jpg') no-repeat scroll 0 bottom; background-size: cover;position: relative;margin-top: -10%;z-index: -1;}
 
 #page-titre h1{color: #fff;text-transform: uppercase;font-size: 3em;text-align: center;padding: 5em;position: relative;}
 
-.vague{background: url(img/banner-pattern.png) 0 0 scroll; height: 145px;position:relative;}
+.vague{background: url('/voyage/img/banner-pattern.png') 0 0 scroll; height: 145px;position:relative;}
 
 #contacts table i{font-size: 1.5em;background-color: #0791be;color: #fff;padding:0.3em 0.5em;}
-#contacts table {border-color: transparent;--bs-table-bg:transparent}
+#contacts table {
+    background:rgba(200,175 ,151 ,0.2);
+    padding: 1em;
+    margin-bottom: 2.5em;
+    border-bottom: 3px solid #0791be;
+    }
+#contacts .reseaux {
+    
+        background:rgba(200,175 ,151 ,0.2);
+        padding: 1em;
+        margin-bottom: 2.5em;
+        border-bottom: 2px solid #0791be;
+    }
 
-#contacts tr{padding:1px;margin-bottom: 1em;}
+#contacts tr{padding: 1px;margin-bottom: 1em;}
 #contacts ul{list-style: none;color: #bd534b;}
-#contacts .reseaux i{font-size: 1.5em;padding: 0.1em 0.3em;border:1px outset #f56960;margin: 5px;}
+#contacts .reseaux i{font-size: 1.5em;padding: 0.2em 0.3em;border:1px outset #f56960;margin: 5px;}
 
 #map iframe{width: 100%;}
 /*fin page contact*/
 /*page 404*/
 
 #page-titre-404{
-    background: url(img/404-img.jpg) no-repeat scroll center center#000;
+    background: url('/voyage/img/404-img.jpg') no-repeat scroll center center#000;
     background-size: cover;
     position: relative;
     margin-top: -10%;
@@ -215,7 +234,7 @@ a.btn-secondary,button.btn-primary{border: none;}
 
 .text-404 h3, .text-404 h4{color: #fff;}
 
-.text-404{position: relative;}
+.text-404{position: relative;text-align: center;}
 
 .text-404 h4{font-size:0.9em;margin: 3em;}
 .text-404 h3{font-size:2.5em;margin-top: -9%;}
@@ -223,19 +242,24 @@ a.btn-secondary,button.btn-primary{border: none;}
 #page-titre-404 input [type="search"]{
     border: 1px solid #fff;
     display: inline-block;
-    width: 40%;
+    width: 35%;
     height: 35px;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px 0px 0px 4px;
     margin-right: -1%;
+}
+#page-titre-404 input {
+    width: 50%;
+    text-align: center;
 }
 
 #page-titre-404 button {
     border: none;
     background: #f56960;
     color: #fff;
-    width: 35px;
+    width: 50%;
     height: 35px;
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px 4px 4px 4px;
+    padding-top: 2px;
 }
 .text-404 span{font-size: 10em;font-family:"Raleway",sans-serif;opacity:0.3;color: #fff;}
 
@@ -254,7 +278,7 @@ a.btn-secondary,button.btn-primary{border: none;}
 
 
 #newletter {
-    background: url(../img/img16.jpg) no-repeat 0 bottom #000;
+    background: url('/voyage/img/img16.jpg') no-repeat 0 bottom #000;
     background-size: cover;
     position: relative;margin-top: 2em;}
     /*margin-top: 0%;

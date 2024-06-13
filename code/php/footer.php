@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col">
                 <ul class="d-flex justify-content-center">
-                    <li><a href="">Mention légales |</a></li>
+                    <li><a href="#">Mention légales |</a></li>
                     <li><a href="#">Termes et conditions |</a></li>
                     <li><a href="#">FAQ |</a></li>
                 </ul>

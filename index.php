@@ -1,18 +1,6 @@
 <?php include('code/php/header.php'); ?>
 
 <!-- slider -->
-<?php 
-$server = "localhost";
-$user = "root";
-$password = "root";
-$db = "voyage";
-$connexion = mysqli_connect($server, $user, $password, $db);
-
-if (!$connexion) {
-    die("Echec de la connexion:" 
-    . mysqli_connect_error());
-}
-?>
 <div class="d-none display-mobile image-slider">
     <h1>Voyages sur mesure</h1>
 </div>

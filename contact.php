@@ -6,7 +6,39 @@
     <div class="vague">
     </div>
 </section>
+<?php
+        //connexion dbb
+        $servername="localhost";
+        $username="root";
+        $password="root";
+        $dbname="voyage";
 
+        //créer connexion dbb
+        $conn=new mysqli($servername,$username,$password,$dbname);
+
+        //vérifier la connexion
+        if($conn->connect_error){
+            die("echec de la connexion:" .$conn->connect_error);
+        }
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        //récupérer les données formulaires
+        $name=$_POST['name'];
+        $email=$_POST['email'];
+        $message=$_POST['message'];
+
+        //préparer et éxécuter requête ,insertion données
+
+        $sql="INSERT INTO Contact (name, email, message) VALUES ('$name','$email','$message')";
+
+        if ($conn->query($sql)=== TRUE) {
+            echo "votre message a bien été envoyé avec succés ,merci.";
+        }else{
+            echo "Une erreur s'est produite lors de l'envoi de votre message ! " . $conn->error;
+        }
+    }
+        //fermer la connexion dbb
+        $conn->close();
+?>
 <section id="contacts">
     <div class="container">
         <div class="row">
@@ -15,14 +47,22 @@
                 <h3>obtenez plus d'informations</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, deserunt iste ut asperiores labore voluptatum accusamus eos explicabo quia deleniti, debitis tempore.</p>
             <form action="" method="POST">
-                    <input type="text" placeholder="Votre Nom" name="nom" class="form-control mb-3" required>
-                    <input type="email" placeholder="Votre mail" class="form-control mb-3"required name="email">
-                    <textarea name="message" cols="30" rows="10" placeholder="Votre message"
+
+                    <div>
+                        <input type="text" placeholder="Votre Nom" name="name" class="form-control mb-3" required>
+                    </div>
+
+                    <div>
+                        <input type="email" placeholder="Votre mail" class="form-control mb-3"required name="email">
+                    </div>
+                    <div>
+                        <textarea name="message" cols="30" rows="10" placeholder="Votre message"
                     class="form-control"required></textarea>
                     <input type="submit" value="Envoyer" class="btn btn-primary form-control">
+                </div>
             </form>  
             </div>
-        
+
             <div class="col-md-4">
                 <h5>Une question? N'hesitez pas à nous contacter !</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur illo maxime tempora quia. Nam est nisi velit voluptas, quisquam nihil? Id temporibus deleniti reiciendis perspiciatis itaque aperiam quibusdam eaque incidunt.</p>
@@ -67,17 +107,21 @@
                         <td><i class="bi bi-telephone-outbound-fill"></i></td>
                         <td colspan="3">Téléphone</td> <br>fixe:01 23 45 67 89 / mobile: 01 23 45 67 89</td>
                     </tr>!-->
+
                 </table>
 
                 <div class="reseaux">
-                    <h6>Suivez-Nous sur les reseaux sociaux</h6>
-                    <ul class="d-flex">
-                        <li><i class="bi bi-facebook"></i></li>
-                        <li><i class="bi bi-twitter-x"></i></li>
-                        <li><i class="bi bi-instagram"></i></li>
-                        <li><i class="bi bi-linkedin"></i></li>    
-                    </ul>
-                    
+                    <div>
+                        <h6>Suivez-Nous sur les reseaux sociaux</h6>
+                    </div>
+                    <div>
+                        <ul class="d-flex">
+                            <li><i class="bi bi-facebook"></i></li>
+                            <li><i class="bi bi-twitter-x"></i></li>
+                            <li><i class="bi bi-instagram"></i></li>
+                            <li><i class="bi bi-linkedin"></i></li>    
+                        </ul>
+                    </div>
                 </div>
 
             </div>
